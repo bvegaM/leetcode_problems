@@ -27,8 +27,8 @@
     <ul>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#problems">Problems</a></li>
-        <li><a>License</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </details>
 
