@@ -1,4 +1,3 @@
-import time
 class Solution:
      def convert(self, s: str, numRows: int) -> str:
         counter,explore,max_counter = 0,0,0
@@ -31,8 +30,7 @@ class Solution:
                 else:
                     aux = counter
                     counter-=1
-                    explore+=1
-                    
+                    explore+=1        
             return response
         
 if __name__ == '__main__':

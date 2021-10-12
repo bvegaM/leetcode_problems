@@ -34,11 +34,95 @@
 
 <br>
 
-## Introduction
+# Introduction
 
 <p align="justify">In this repository you will find solutions to various problems of the leetCode platform. The objective of this repository is to show solutions to problems related to data structure. At the same time I try to improve my developer skills, solving problems in the best way.<p>
 
-## Problems
+# Problems
+
+## Algorithms
+
+### Easy problems
+
+<br>
+
+<details>
+<summary> Roman to Integer</summary>
+
+<br>
+
+<div class='container' style="border-bottom: 1px solid rgb(238, 238, 238);">
+<p>Dificult: <strong style="color: rgb(67, 160, 71)">Easy</strong> 
+Link: <a href="https://leetcode.com/problems/roman-to-integer/">problem</a>
+</p>
+</div>
+<br>
+Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+
+```
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+```
+
+For example, ```2``` is written as ```II``` in Roman numeral, just two one's added together. ```12``` is written as ```XII```, which is simply ```X + II```. The number ```27``` is written as ```XXVII```, which is ```XX + V + II```.
+
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not ```IIII```. Instead, the number four is written as ```IV```. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as ```IX```. There are six instances where subtraction is used:
+
+* I can be placed before V (5) and X (10) to make 4 and 9. 
+* X can be placed before L (50) and C (100) to make 40 and 90. 
+* C can be placed before D (500) and M (1000) to make 400 and 900.
+
+Given a roman numeral, convert it to an integer.
+
+**Example 1:**
+
+```
+Input: s = "III"
+Output: 3
+```
+
+**Example 2:**
+
+```
+Input: s = "IV"
+Output: 4
+```
+
+**Example 3:**
+
+```
+Input: s = "IX"
+Output: 9
+```
+
+**Example 4:**
+
+```
+Input: s = "LVIII"
+Output: 58
+Explanation: L = 50, V= 5, III = 3.
+```
+
+**Example 5:**
+
+```
+Input: s = "MCMXCIV"
+Output: 1994
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+```
+</details>
+
+<br>
+
+### Medium problems
+
+<br>
 
 <details>
 <summary>Add Two Numbers</summary>
@@ -131,61 +215,6 @@ Output: 0
 </details>
 
 <details>
-<summary>Median of Two Sorted Arrays</summary>
-
-<br>
-
-<div class='container' style="border-bottom: 1px solid rgb(238, 238, 238);">
-<p>Dificult: <strong style="color: rgb(233, 30, 99)">Hard</strong> 
-Link: <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">problem</a>
-</p>
-</div>
-
-<br>
-
-Given two sorted arrays ```nums1``` and ```nums2``` of size m and n respectively, return the median of the two sorted arrays.
-
-The overall run time complexity should be ```O(log (m+n))```.
-
-**Example 1:**
-
-```
-Input: nums1 = [1,3], nums2 = [2]
-Output: 2.00000
-Explanation: merged array = [1,2,3] and median is 2.
-```
-
-**Example 2:**
-
-```
-Input: nums1 = [1,2], nums2 = [3,4]
-Output: 2.50000
-Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
-```
-
-**Example 3:**
-
-```
-Input: nums1 = [0,0], nums2 = [0,0]
-Output: 0.00000
-```
-
-**Example 4:**
-
-```
-Input: nums1 = [], nums2 = [1]
-Output: 1.00000
-```
-
-**Example 5:**
-
-```
-Input: nums1 = [2], nums2 = []
-Output: 2.00000
-```
-</details>
-
-<details>
 <summary>ZigZag Conversion</summary>
 
 <br>
@@ -242,13 +271,75 @@ Output: "A"
 
 <br>
 
-## License
+### Hard problems
+
+<br>
+
+<details>
+<summary>Median of Two Sorted Arrays</summary>
+
+<br>
+
+<div class='container' style="border-bottom: 1px solid rgb(238, 238, 238);">
+<p>Dificult: <strong style="color: rgb(233, 30, 99)">Hard</strong> 
+Link: <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">problem</a>
+</p>
+</div>
+
+<br>
+
+Given two sorted arrays ```nums1``` and ```nums2``` of size m and n respectively, return the median of the two sorted arrays.
+
+The overall run time complexity should be ```O(log (m+n))```.
+
+**Example 1:**
+
+```
+Input: nums1 = [1,3], nums2 = [2]
+Output: 2.00000
+Explanation: merged array = [1,2,3] and median is 2.
+```
+
+**Example 2:**
+
+```
+Input: nums1 = [1,2], nums2 = [3,4]
+Output: 2.50000
+Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+```
+
+**Example 3:**
+
+```
+Input: nums1 = [0,0], nums2 = [0,0]
+Output: 0.00000
+```
+
+**Example 4:**
+
+```
+Input: nums1 = [], nums2 = [1]
+Output: 1.00000
+```
+
+**Example 5:**
+
+```
+Input: nums1 = [2], nums2 = []
+Output: 2.00000
+```
+</details>
+
+
+<br>
+
+# License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 All issues are the authorship of the LeetCode platform.
 
-## Contact
+# Contact
 
 Bryam David Vega Moreno - [@BryamDavidVega1](https://twitter.com/BryamDavidVega1) - vegabryam40@gmail.com
 
