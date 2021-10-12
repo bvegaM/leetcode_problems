@@ -397,6 +397,98 @@ Output: 2.00000
 ```
 </details>
 
+
+
+
+
+
+
+
+## Database
+
+### Easy problems
+
+<details>
+<summary> Combine Two Tables </summary>
+
+<br>
+
+<div class='container' style="border-bottom: 1px solid rgb(238, 238, 238);">
+<p>Dificult: <strong style="color: rgb(67, 160, 71)">Easy</strong> 
+Link: <a href="https://leetcode.com/problems/combine-two-tables/">problem</a>
+</p>
+</div>
+<br>
+
+`SQL Schema >`
+
+Table: `Person`
+
+```sql
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| PersonId    | int     |
+| FirstName   | varchar |
+| LastName    | varchar |
++-------------+---------+
+PersonId is the primary key column for this table.
+This table contains information about the ID of some persons and their first and last names.
+```
+
+Table: `Address`
+
+```sql
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| AddressId   | int     |
+| PersonId    | int     |
+| City        | varchar |
+| State       | varchar |
++-------------+---------+
+AddressId is the primary key column for this table.
+Each row of this table containts information about the city and state of one person with ID = PersonId.
+```
+
+Write an SQL query to report the first name, last name, city, and state of each person in the `Person` table. If the address of a `PersonId` is not present in the `Address` table, report null instead.
+
+Return the result table in **any order**.
+
+The query result format is in the following example.
+
+**Example 1:**
+
+```sql
+Input: 
+Person table:
++----------+----------+-----------+
+| PersonId | LastName | FirstName |
++----------+----------+-----------+
+| 1        | Wang     | Allen     |
+| 2        | Alice    | Bob       |
++----------+----------+-----------+
+Address table:
++-----------+----------+---------------+------------+
+| AddressId | PersonId | City          | State      |
++-----------+----------+---------------+------------+
+| 1         | 2        | New York City | New York   |
+| 2         | 3        | Leetcode      | California |
++-----------+----------+---------------+------------+
+Output: 
++-----------+----------+---------------+----------+
+| FirstName | LastName | City          | State    |
++-----------+----------+---------------+----------+
+| Allen     | Wang     | Null          | Null     |
+| Bob       | Alice    | New York City | New York |
++-----------+----------+---------------+----------+
+Explanation: 
+There is no address in the address table for the PersonId = 1 so we return null in their city and state.
+AddressId = 1 contains information about the address of PersonId = 2.
+```
+</details>
+
+
 # License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
