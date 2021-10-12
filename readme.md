@@ -44,8 +44,6 @@
 
 ### Easy problems
 
-<br>
-
 <details>
 <summary> Roman to Integer</summary>
 
@@ -157,10 +155,10 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 </details>
-<br>
+
 
 ### Medium problems
-<br>
+
 <details>
 <summary>Add Two Numbers</summary>
 
@@ -168,7 +166,7 @@ Output: [0,1]
 
 <div class='container' style="border-bottom: 1px solid rgb(238, 238, 238);">
 <p>Dificult: <strong style="color: rgb(239, 108, 0)">Medium</strong> 
-Link: <a href="https://leetcode.com/problems/add-two-numbers/">problem</a>
+Link: <a href="https://leetcode.com/problems/partition-labels/">problem</a>
 </p>
 </div>
 
@@ -305,11 +303,44 @@ Input: s = "A", numRows = 1
 Output: "A"
 ```
 </details>
+
+<details>
+<summary>Partition Labels</summary>
+
 <br>
+
+<div class='container' style="border-bottom: 1px solid rgb(238, 238, 238);">
+<p>Dificult: <strong style="color: rgb(239, 108, 0)">Medium</strong> 
+Link: <a href="https://leetcode.com/problems/zigzag-conversion/">problem</a>
+</p>
+</div>
+
+<br>
+
+You are given a string `s`. We want to partition the string into as many parts as possible so that each letter appears in at most one part.
+
+Return a list of integers representing the size of these parts.
+
+**Example 1:**
+
+```
+Input: s = "ababcbacadefegdehijhklij"
+Output: [9,7,8]
+Explanation:
+The partition is "ababcbaca", "defegde", "hijhklij".
+This is a partition so that each letter appears in at most one part.
+A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits s into less parts.
+```
+
+**Example 2:**
+
+```
+Input: s = "eccbbbbdec"
+Output: [10]
+```
+</details>
 
 ### Hard problems
-
-<br>
 
 <details>
 <summary>Median of Two Sorted Arrays</summary>
@@ -365,9 +396,6 @@ Input: nums1 = [2], nums2 = []
 Output: 2.00000
 ```
 </details>
-
-
-<br>
 
 # License
 
