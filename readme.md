@@ -489,6 +489,80 @@ AddressId = 1 contains information about the address of PersonId = 2.
 </details>
 
 
+
+### Medium problems
+
+<details>
+<summary>Second Highest Salary</summary>
+
+<br>
+
+<div class='container' style="border-bottom: 1px solid rgb(238, 238, 238);">
+<p>Dificult: <strong style="color: rgb(239, 108, 0)">Medium</strong> 
+Link: <a href="https://leetcode.com/problems/second-highest-salary/">problem</a>
+</p>
+</div>
+
+<br>
+
+`SQL Schema >`
+
+Table: `Employee`
+
+```sql
++-------------+------+
+| Column Name | Type |
++-------------+------+
+| Id          | int  |
+| Salary      | int  |
++-------------+------+
+Id is the primary key column for this table.
+Each row of this table contains information about the salary of an employee.
+```
+
+Write an SQL query to report the second highest salary from the `Employee` table. If there is no second highest salary, the query should report `null`.
+
+The query result format is in the following example.
+
+**Example 1:**
+```sql
+Input: 
+Employee table:
++----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+Output: 
++---------------------+
+| SecondHighestSalary |
++---------------------+
+| 200                 |
++---------------------+
+```
+
+
+**Example 2:**
+
+```sql
+Input: 
+Employee table:
++----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
++----+--------+
+Output: 
++---------------------+
+| SecondHighestSalary |
++---------------------+
+| Null                |
++---------------------+
+```
+</details>
+
 # License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
